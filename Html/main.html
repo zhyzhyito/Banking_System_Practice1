@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/Css/main.css">
+    <script src="/JavaScript/banking.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container-main">
+            <h2 class="title1">BANKING SYSTEM</h2>
+            <p class="bal" id="balance">Balance: PHP 0</p>
+            <input class="amnt" type="number" id="amount" placeholder="Enter amount">
+            <br><br>
+            <div class="container-btn">
+                <button onclick="deposit()">Deposit</button>
+                <button onclick="withdraw()">Withdraw</button>
+                <button id="printBtn" onclick="printReceipt()">Print Receipt</button>
+                <button id="cleatBtn" onclick="clearTransaction()">Clear Transaction</button>
+            </div>
+                <div class="container-TH">
+                    <h3>Transaction History</h3>
+                    <ul id="history"></ul>
+                </div>
+        </div>
+    </nav>
+</body>
+</html>
